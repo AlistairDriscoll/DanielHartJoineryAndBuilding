@@ -1,0 +1,25 @@
+/* Font classes */
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-dirt-regular {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Uses delius on text, unless specified otherwise plus background picture */
+
+body {
+    font-family: delius, sans-serif;
+}
+
+/* classes for the header */
+
+.banner-img {
+    object-fit: cover;
+}

@@ -12,11 +12,34 @@
             <meta name="description" content="Joinery and building services website">
             <meta name="keywords" content="Joiner, builder, West Yorkshire, carpenter">
             <meta name="author" content="Alistair Driscoll">
+            <!-- Google fonts links -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Delius&family=Rubik+Dirt&display=swap"
+                  rel="stylesheet">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                  rel="stylesheet">
+            <!-- CSS links -->
+            <link rel="stylesheet" href="{% static 'css/styles.css' %}">
             <title>Daniel Hart Joinery and Building Services</title>
       </head>
       <body>
+            <div class="container-lg">
+                  <header>
+                        <img class="banner-img rounded-bottom-3"
+                             width="100%"
+                             height="250"
+                             src="{% static 'images/office-complete.png' %}"
+                             alt="Completed office photo">
+                        <h1 class="rubik-dirt-regular mt-2">Daniel Hart Joinery and Building Services</h1>
+                  </header>
+            </div>
+
             {% block content %}
 
             {% endblock content %}
+            <!-- Bootstrap JS Bundle -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       </body>
 </html>
