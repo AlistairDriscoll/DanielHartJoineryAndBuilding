@@ -2,12 +2,28 @@
 
 {% block content %}
     <main class="container-lg">
-        <div class="row">
-            <div class="col-6">
-                <p class="mt-2">
-                    Hi there, I am a joiner/carpenter from Leeds. I have 30 or so years’ experience, mainly in construction, but I have also worked in film and theatre, and as a cabinet maker for several years. Because of this varied work, my strong point is doing one-off bespoke projects that require a little bit of invention and creativity. All aspects of the building trade are covered and other works include, bathrooms, kitchens, extensions and basement conversions.
-                </p>
+
+        <!-- About section -->
+        <section class="skills-container my-5 p-4 rounded-3">
+            <h2 class="text-center roboto-slab-headings mb-4">About Me</h2>
+            <p>
+                Hi there, my name is Daniel Hart and I am a joiner/carpenter from Leeds. I have 30 or so years' experience, mainly in construction, but I have also worked in film and theatre, and as a cabinet maker for several years. Because of this varied work, my strong point is doing one-off bespoke projects that require a little bit of invention and creativity. All aspects of the building trade are covered and other works include, bathrooms, kitchens, extensions and basement conversions.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-container my-5 p-4 rounded-3">
+            <h2 class="text-center roboto-slab-headings mb-4">Skills & Services</h2>
+            <div class="row justify-content-center">
+                {% for skill in skills %}
+                    <div class="col-6 col-md-4 col-lg-3 mb-3">
+                        <p class="skill-item">
+                            ✔ <strong>{{ skill.title }}</strong>
+                        </p>
+                    </div>
+                {% endfor %}
             </div>
-        </div>
+        </section>
+
     </main>
 {% endblock content %}

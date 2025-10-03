@@ -1,4 +1,6 @@
-/* Font classes */
+/* ================================
+   FONT CLASSES
+================================ */
 
 .delius-regular {
     font-family: "Delius", cursive;
@@ -6,20 +8,128 @@
     font-style: normal;
 }
 
-.rubik-dirt-regular {
-    font-family: "Rubik Dirt", system-ui;
-    font-weight: 400;
+.roboto-slab-headings {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
 }
 
-/* Uses delius on text, unless specified otherwise plus background picture */
+/* ================================
+   GLOBAL STYLES
+================================ */
 
 body {
-    font-family: delius, sans-serif;
+    background-color: #F8F8F6;
+    /* soft light grey */
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    /* neutral dark grey */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* classes for the header */
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #233D34;
+    /* dark green-grey */
+    margin-bottom: 0.5rem;
+}
+
+/* ================================
+   HEADER STYLES
+================================ */
 
 .banner-img {
     object-fit: cover;
+    border-radius: 8px;
+}
+
+.checkatrade-h3 {
+    background-color: #8B5E3C;
+    /* warm brown accent */
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   SKILLS SECTION
+================================ */
+
+.skills-container {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.skills-container h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #233D34;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+.skill-item strong {
+    color: #233D34;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.custom-navbar {
+    background-color: #233D34;
+    border-radius: 8px;
+}
+
+.custom-navbar .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-navbar .nav-link {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #8B5E3C;
+}
+
+.custom-navbar .nav-link.active {
+    color: #8B5E3C !important;
+    font-weight: 600;
+    border-bottom: 2px solid #8B5E3C;
+}
+
+/* burger icon on mobile */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
