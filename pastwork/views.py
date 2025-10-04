@@ -10,6 +10,7 @@ def reviews(request):
     context = {
         "reviews": reviews,
     }
+
     return render(
         request,
         "pastwork/reviews.html",

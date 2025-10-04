@@ -1,25 +1,26 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class CATReview(models.Model):
     """ Model for previous reviews on Checkatrade """
 
-    username = models.CharField(max_length=30)
-    rating = models.IntegerField()
+    title = models.CharField(max_length=100)
+    rating = models.FloatField(
+        validators=[MinValueValidator(0), MaxValueValidator(10)],
+    )
     description = models.TextField()
     location = models.CharField(max_length=7, blank=True)
     date = models.DateField(auto_now=False, auto_now_add=False)
 
     def __str__(self):
-        """ Title is first 15 characters of review description """
-        title = self.description[:15]
-        return title
+        return self.title
 
 
 class PastWorkAlbum(models.Model):
     """ Model where my uncle can upload pictures of previous jobs """
 
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
