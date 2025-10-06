@@ -1,21 +1,16 @@
 from django.shortcuts import render
+from django.views import generic
 from .models import CATReview, PastWorkAlbum
 
 
-def reviews(request):
-    """ Displays the reviews from checkatrade """
+class ReviewList(generic.ListView):
+    """Display and paginate all reviews"""
 
-    reviews = CATReview.objects.all()
-
-    context = {
-        "reviews": reviews,
-    }
-
-    return render(
-        request,
-        "pastwork/reviews.html",
-        context,
-    )
+    model = CATReview  # ✅ clearer than using `queryset`
+    template_name = "pastwork/reviews.html"
+    context_object_name = "reviews"  # ✅ optional, makes template cleaner
+    paginate_by = 6
+    ordering = ["-id"]
 
 
 def pastwork(request):
