@@ -16,6 +16,18 @@
 }
 
 /* ================================
+   COLOURS
+================================ */
+
+.oaky-background {
+    background-color: #A66A4C;
+}
+
+.border-color-dark {
+    border-color: #233D34;
+}
+
+/* ================================
    GLOBAL STYLES
 ================================ */
 
@@ -134,9 +146,53 @@ h3 {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Pagination links in the centre of the page */
+
+/* ================================
+   PAGINATION STYLING
+================================ */
 
 .pagination {
-    justify-content: center !important;
+    justify-content: center!important;
     margin: 0 auto;
+}
+
+.page-link {
+    color: #233D34;
+    /* dark green-grey text */
+    border: 1px solid #8B5E3C;
+    /* brown border */
+}
+
+.page-link:hover {
+    background-color: #8B5E3C;
+    /* brown hover */
+    color: #fff;
+    /* white text */
+    border-color: #8B5E3C;
+}
+
+.page-item.active .page-link {
+    background-color: #8B5E3C;
+    /* warm brown */
+    border-color: #8B5E3C;
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #aaa;
+    border-color: #ddd;
+}
+
+/* class for cards in reviews section */
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.width-auto {
+    display: inline-block;
+    width: auto;
 }
