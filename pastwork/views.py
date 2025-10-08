@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import CATReview, PastWorkAlbum
 
@@ -26,4 +26,20 @@ def pastwork(request):
         request,
         "pastwork/pastwork.html",
         context,
+    )
+
+
+def pastwork_detail(request, slug):
+    """ Displays the full photo album from a past job """
+
+    past_work_album = get_object_or_404(PastWorkAlbum, slug=slug)
+
+    context = {
+        'past_work_album': past_work_album,
+    }
+
+    return render(
+        context,
+        'pastwork/pastwork_detail.html',
+        request,
     )

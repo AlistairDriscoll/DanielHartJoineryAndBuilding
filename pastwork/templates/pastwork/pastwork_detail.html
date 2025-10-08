@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container text-center">
+        <h1>{{ album.title }}</h1>
+        <div class="row justify-content-center">
+            {% for image in album.images.all %}
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <img src="{{ image.image.url }}"
+                         alt="{{ album.title }}"
+                         class="img-fluid rounded">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
