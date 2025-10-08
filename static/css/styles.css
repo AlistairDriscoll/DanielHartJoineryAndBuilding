@@ -236,3 +236,36 @@ h3 {
         border-radius: 0.3rem;
     }
 }
+
+/* ================================
+   Styles for past work page
+================================ */
+.pw-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--oaky-background, #3b3b3b);
+    /* optional fallback */
+    color: #ffffff;
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pw-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.pw-card-title {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+/* Ensure text isn’t underlined unless hovered */
+a.text-decoration-none:hover .pw-card-title {
+    text-decoration: underline;
+}
+
+/* remove conflicting rule */
+.pw-card:hover a {
+    text-decoration: none;
+}
