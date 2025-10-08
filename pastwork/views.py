@@ -33,13 +33,15 @@ def pastwork_detail(request, slug):
     """ Displays the full photo album from a past job """
 
     past_work_album = get_object_or_404(PastWorkAlbum, slug=slug)
+    images = past_work_album.images.all()
 
     context = {
         'past_work_album': past_work_album,
+        'images': images,
     }
 
     return render(
-        context,
-        'pastwork/pastwork_detail.html',
         request,
+        "pastwork/pastwork_detail.html",
+        context,
     )

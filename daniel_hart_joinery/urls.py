@@ -22,8 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("home.urls"), name="index"),
-    path("reviews", include("pastwork.urls"), name="reviews"),
-    path("pastwork", include("pastwork.urls-pw"), name="reviews"),
+    path("reviews/", include("pastwork.urls"), name="reviews"),
+    path("pastwork/", include("pastwork.urls-pw"), name="reviews"),
 ]
 
 if settings.DEBUG:
