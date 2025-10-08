@@ -3,7 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class CATReview(models.Model):
-    """ Model for previous reviews on Checkatrade """
+    """Model for previous reviews on Checkatrade"""
 
     title = models.CharField(max_length=100)
     rating = models.FloatField(
@@ -18,7 +18,7 @@ class CATReview(models.Model):
 
 
 class PastWorkAlbum(models.Model):
-    """ Model where my uncle can upload pictures of previous jobs """
+    """Model where my uncle can upload pictures of previous jobs"""
 
     title = models.CharField(max_length=100)
 
@@ -27,13 +27,18 @@ class PastWorkAlbum(models.Model):
 
 
 class ProjectImage(models.Model):
-    """ Any amount of images allowed for PastWorkAlbum so made its own model"""
+    """Any amount of images allowed for PastWorkAlbum so made its own model"""
 
+    image = models.ImageField(
+        upload_to="product_images/", blank=True, null=True
+        )
     album = models.ForeignKey(
-        PastWorkAlbum,
-        on_delete=models.CASCADE,
-        related_name='images'
+        PastWorkAlbum, on_delete=models.CASCADE, related_name="images"
     )
+
+    class Meta:
+        verbose_name = "Project Image"
+        verbose_name_plural = "Project Images"
 
     def __str__(self):
         return f"Image for {self.album.title}"
