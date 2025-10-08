@@ -27,6 +27,12 @@
     border-color: #233D34;
 }
 
+.green-outline {
+    border-color: #233D34;
+    border-width: 2px;
+}
+
+
 /* ================================
    GLOBAL STYLES
 ================================ */
@@ -195,4 +201,38 @@ h3 {
 .width-auto {
     display: inline-block;
     width: auto;
+}
+
+/* Styling for 'get quote' buttons */
+
+.brown-quote{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.brown-quote:hover {
+    background-color: #233D34;
+    text-decoration: underline;
+    color: #8B5E3C !important;
+}
+
+.brown-quote:hover a {
+    color: #8B5E3C !important;
+}
+
+.btn-xl {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .btn-xl {
+        padding: 0.5rem 1rem;
+        /* matches btn-lg padding */
+        font-size: 1.25rem;
+        /* matches btn-lg font size */
+        border-radius: 0.3rem;
+    }
 }
