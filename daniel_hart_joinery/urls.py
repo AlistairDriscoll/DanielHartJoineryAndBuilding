@@ -24,6 +24,7 @@ urlpatterns = [
     path("", include("home.urls"), name="index"),
     path("reviews/", include("pastwork.urls"), name="reviews"),
     path("pastwork/", include("pastwork.urls-pw"), name="pastwork"),
+    path("get-quote/", include("enquiries.views"), name="get-quote"),
 ]
 
 if settings.DEBUG:
