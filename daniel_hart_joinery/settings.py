@@ -89,6 +89,12 @@ DATABASES = {
     }
 }
 
+# Email stuff
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "no-reply@example.com"
+ENQUIRY_RECIPIENT = "you@example.com"
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
