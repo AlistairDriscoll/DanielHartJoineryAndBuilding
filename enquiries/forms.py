@@ -19,12 +19,13 @@ class EnquiryForm(forms.ModelForm):
             ),
             "location": forms.TextInput(
                 attrs={
-                    "class": "form-control", "placeholder": "Leeds, LS7"
+                    "class": "form-control", "placeholder": " i.e. Leeds, LS7"
                     }
             ),
             "job_title": forms.TextInput(
                 attrs={
-                    "class": "form-control", "placeholder": "Kitchen extension"
+                    "class": "form-control",
+                    "placeholder": " i.e. Kitchen extension"
                     }
             ),
             "description": forms.Textarea(
