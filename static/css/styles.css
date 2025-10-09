@@ -269,3 +269,8 @@ a.text-decoration-none:hover .pw-card-title {
 .pw-card:hover a {
     text-decoration: none;
 }
+
+.pw-card:hover p {
+    text-decoration: underline;
+    color: #0d6efd;
+}
