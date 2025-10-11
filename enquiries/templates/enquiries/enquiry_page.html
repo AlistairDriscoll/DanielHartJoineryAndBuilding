@@ -10,6 +10,7 @@
                 <form method="post" action="{% url 'enquiry_page' %}" novalidate>
                     {% csrf_token %}
                     {{ form|crispy }}
+                    <p>* next to required fields</p>
                     <div class="d-flex justify-content-center">
                         <button type="submit"
                                 class="btn btn-lg oaky-background text-white rounded-3 mt-3 brown-quote">

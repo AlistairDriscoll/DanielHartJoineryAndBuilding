@@ -100,8 +100,8 @@ DATABASES = {
 # Email stuff
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-DEFAULT_FROM_EMAIL = "no-reply@example.com"
-ENQUIRY_RECIPIENT = "you@example.com"
+DEFAULT_FROM_EMAIL = os.environ["DEFAULT_FROM_EMAIL"]
+ENQUIRY_RECIPIENT = os.environ["ENQUIRY_RECIPIENT"]
 
 
 # Password validation
