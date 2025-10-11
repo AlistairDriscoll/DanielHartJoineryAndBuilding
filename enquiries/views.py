@@ -28,6 +28,7 @@ def enquiry_page(request):
         form = EnquiryForm(request.POST)
 
         if form.is_valid():
+
             enquiry = form.save()
 
             name = enquiry.name
@@ -51,10 +52,9 @@ def enquiry_page(request):
                 reply_to=[enquiry.email],
             )
             email.send(fail_silently=False)
-
-            return redirect('enquiry_success')
+            return redirect("enquiry_success")
         else:
-            return redirect('enquiry')
+            return redirect('enquiry_failure')
 
 
 def enquiry_success(request):
@@ -63,4 +63,13 @@ def enquiry_success(request):
     return render(
         request,
         'enquiries/enquiry_success.html',
+    )
+
+
+def enquiry_failure(request):
+    """ View to display the correct template incase of a failed enquiry"""
+
+    return render(
+        request,
+        'enquiries/enquiry_failure.html',
     )
