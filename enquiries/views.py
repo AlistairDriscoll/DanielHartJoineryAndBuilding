@@ -52,7 +52,16 @@ def enquiry_page(request):
             )
             email.send(fail_silently=False)
 
-            return redirect('index')
+            return redirect('enquiry_success')
         else:
             print("Validation error")
             return redirect('index')
+
+
+def enquiry_success(request):
+    """ view to display the success template after user makes an enquiry """
+
+    return render(
+        request,
+        'enquiries/enquiry_success.html',
+    )

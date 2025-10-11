@@ -1,4 +1,4 @@
-{% extends base.html %}
+{% extends "base.html" %}
 
 {% block content %}
 
@@ -13,6 +13,7 @@
         <br>
         <br>
         <p>Dan</p>
+        <a href="{% url 'index' %}" class="btn btn-xl brown-quote"></a>
     </main>
 
 {% endblock content %}
