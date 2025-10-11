@@ -54,8 +54,7 @@ def enquiry_page(request):
 
             return redirect('enquiry_success')
         else:
-            print("Validation error")
-            return redirect('index')
+            return redirect('enquiry')
 
 
 def enquiry_success(request):
