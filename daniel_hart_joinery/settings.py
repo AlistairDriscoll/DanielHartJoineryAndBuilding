@@ -37,6 +37,15 @@ ALLOWED_HOSTS = [
     "www.danielhartjoinery.co.uk",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "danielhartjoineryandbuilding.onrender.com",
+    "danielhartjoinery.co.uk",
+    "www.danielhartjoinery.co.uk",
+]
+
+# Behind Render’s proxy
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+USE_X_FORWARDED_HOST = True
 
 # Application definition
 
