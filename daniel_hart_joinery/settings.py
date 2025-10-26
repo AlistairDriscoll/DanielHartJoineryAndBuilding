@@ -30,8 +30,12 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = os.environ.get("DEVELOPMENT") == "True"
 
 ALLOWED_HOSTS = [
-    "localhost", "127.0.0.1", ".onrender.com", "danielhartjoinery.co.uk"
-    ]
+    "localhost",
+    "127.0.0.1",
+    ".onrender.com",
+    "danielhartjoinery.co.uk",
+    "www.danielhartjoinery.co.uk",
+]
 
 
 # Application definition
