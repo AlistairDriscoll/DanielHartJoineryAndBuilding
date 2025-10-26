@@ -38,9 +38,9 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "danielhartjoineryandbuilding.onrender.com",
-    "danielhartjoinery.co.uk",
-    "www.danielhartjoinery.co.uk",
+    "https://danielhartjoineryandbuilding.onrender.com",
+    "https://danielhartjoinery.co.uk",
+    "https://danielhartjoinery.co.uk",
 ]
 
 # Behind Render’s proxy
