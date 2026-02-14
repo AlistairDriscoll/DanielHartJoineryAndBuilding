@@ -292,3 +292,52 @@ a.text-decoration-none:hover .pw-card-title {
     text-decoration: underline;
     color: #0d6efd;
 }
+
+.expand-toggle {
+    display: none;
+}
+
+.expandable-text {
+    min-width: 0;
+    /* IMPORTANT in flex containers */
+}
+
+/* To add truncation to reviews on small screens */
+
+@media (max-width: 767.98px) {
+    .truncate-sm {
+        display: block;
+        /* more reliable than inline-block for truncation */
+        width: 100%;
+        /* ensures a truncation width exists */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .expand-toggle:checked~.truncate-sm {
+        white-space: normal;
+        overflow: visible;
+    }
+
+    .expand-label {
+        display: inline-block;
+        font-size: 0.875rem;
+        cursor: pointer;
+        margin-top: 0.25rem;
+    }
+
+    .expand-label::after {
+        content: "Read more";
+    }
+
+    .expand-toggle:checked~.expand-label::after {
+        content: "Read less";
+    }
+}
+
+@media (min-width: 768px) {
+    .expand-label {
+        display: none;
+    }
+}

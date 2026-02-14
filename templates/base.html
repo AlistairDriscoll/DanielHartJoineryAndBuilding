@@ -28,10 +28,10 @@
             <div class="container-lg">
                   <header>
                         <div class="row">
-                              <div class="col-6">
+                              <div class="col-12 col-md-6">
                                     <h1 class="roboto-slab-headings mt-2">Daniel Hart Joinery and Building Services</h1>
                               </div>
-                              <div class="roboto-slab-headings col-6 d-flex justify-content-end mt-2">
+                              <div class="roboto-slab-headings col-6 d-none d-md-flex justify-content-end mt-2">
                                     <h3 class="checkatrade-h3 my-auto">Checkatrade Score: 9.78/10</h3>
                               </div>
                               <div class="col-12">
@@ -44,7 +44,7 @@
                         </div>
 
                         <!-- NAVBAR START -->
-                        <nav class="navbar navbar-expand-lg custom-navbar mt-3">
+                        <nav class="navbar navbar-expand-sm custom-navbar mt-3">
                               <div class="container-lg">
                                     <button class="navbar-toggler"
                                             type="button"
@@ -69,7 +69,7 @@
                                                       <a class="nav-link {% if request.resolver_match.url_name == 'pastwork' %}active{% endif %}" href="{% url 'pastwork' %}">Previous Work</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                      <a class="oaky-background rounded-3 text-decoration-underline nav-link brown-quote {% if request.resolver_match.url_name == 'enquiry' %}active{% endif %}" href="{% url 'enquiry_page' %}">Get A Quote</a>
+                                                      <a class="oaky-background rounded-3 text-decoration-underline nav-link brown-quote px-2 {% if request.resolver_match.url_name == 'enquiry' %}active{% endif %}" href="{% url 'enquiry_page' %}">Get A Quote</a>
                                                 </li>
                                           </ul>
                                     </div>

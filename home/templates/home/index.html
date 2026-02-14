@@ -11,12 +11,11 @@
             </p>
         </section>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-none d-sm-flex justify-content-center">
 
                 <a class="btn btn-xl oaky-background rounded-3 mt-3 mb-3 brown-quote text-white" href="{% url 'enquiry_page' %}">Get A Quote</a>
 
         </div>
-
         <!-- Skills Section -->
         <section class="skills-container my-5 p-4 rounded-3">
             <h2 class="text-center roboto-slab-headings mb-4">Skills & Services</h2>
@@ -30,6 +29,12 @@
                 {% endfor %}
             </div>
         </section>
+
+        <div class="d-flex d-sm-none justify-content-center">
+
+                <a class="btn btn-xl oaky-background rounded-3 mt-3 mb-3 brown-quote text-white" href="{% url 'enquiry_page' %}">Get A Quote</a>
+
+        </div>
 
     </main>
 {% endblock content %}
