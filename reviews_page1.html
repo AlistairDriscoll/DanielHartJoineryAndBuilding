@@ -1,400 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon"
-                  type="image/png"
-                  href="/assets/images/cross-tools.png">
-            <!--Meta data-->
-            <meta name="description" content="Joinery and building services website">
-            <meta name="keywords" content="Joiner, builder, West Yorkshire, carpenter">
-            <meta name="author" content="Alistair Driscoll">
-            <!-- Google fonts links -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto+Slab:wght@100..900&display=swap"
-                  rel="stylesheet">
-            <!-- Bootstrap CSS -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-                  rel="stylesheet">
-            <!-- CSS links -->
-            <link rel="stylesheet" href="/assets/css/styles.css">
-            <title>Daniel Hart Joinery and Building Services</title>
-      </head>
-      <body>
-            <div class="container-lg">
-                  <header>
-                        <div class="row">
-                              <div class="col-12 col-md-6">
-                                    <h1 class="roboto-slab-headings mt-2">Daniel Hart Joinery and Building Services</h1>
-                              </div>
-                              <div class="roboto-slab-headings col-6 d-none d-md-flex justify-content-end mt-2">
-                                    <h3 class="checkatrade-h3 my-auto">Checkatrade Score: 9.78/10</h3>
-                              </div>
-                              <div class="col-12">
-                                    <img class="banner-img rounded-3"
-                                         width="100%"
-                                         height="250"
-                                         src="/static/images/office-complete.png"
-                                         alt="Completed office photo">
-                              </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/cross-tools.png">
+    <!--Meta data-->
+    <meta name="description" content="Joinery and building services website">
+    <meta name="keywords" content="Joiner, builder, West Yorkshire, carpenter">
+    <meta name="author" content="Alistair Driscoll">
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Daniel Hart Joinery and Building Services</title>
+</head>
+
+<body>
+    <div class="container-lg">
+        <header>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="roboto-slab-headings mt-2">Daniel Hart Joinery and Building Services</h1>
+                </div>
+                <div class="roboto-slab-headings col-6 d-none d-md-flex justify-content-end mt-2">
+                    <h3 class="checkatrade-h3 my-auto">Checkatrade Score: 9.78/10</h3>
+                </div>
+                <div class="col-12">
+                    <img class="banner-img rounded-3" width="100%" height="250" src="/static/images/office-complete.png"
+                        alt="Completed office photo">
+                </div>
+            </div>
+
+            <!-- NAVBAR START -->
+            <nav class="navbar navbar-expand-sm custom-navbar mt-3">
+                <div class="container-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a class="nav-link " href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/reviews/">Customer Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pastwork/">Previous Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="oaky-background rounded-3 text-decoration-underline nav-link brown-quote px-2 "
+                                    href="/get-quote/">Get A Quote</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- NAVBAR END -->
+        </header>
+    </div>
+
+
+
+    <main class="container-lg">
+        <div class="row">
+
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Doors fitted</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-1" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “Came on time did the job same day did a really good job and cleaned up after himself
+                                would definitely recommend him”
+                            </p>
+
+                            <label for="expand-1" class="expand-label"></label>
                         </div>
 
-                        <!-- NAVBAR START -->
-                        <nav class="navbar navbar-expand-sm custom-navbar mt-3">
-                              <div class="container-lg">
-                                    <button class="navbar-toggler"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#navbarNav"
-                                            aria-controls="navbarNav"
-                                            aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                          <span class="navbar-toggler-icon"></span>
-                                    </button>
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            WF10, November 2024
+                        </p>
 
-                                    <div class="collapse navbar-collapse" id="navbarNav">
-                                          <ul class="navbar-nav w-100">
-                                                <li class="nav-item">
-                                                      <a class="nav-link "
-                                                         href="/">Home</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                      <a class="nav-link active" href="/reviews/">Customer Reviews</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                      <a class="nav-link " href="/pastwork/">Previous Work</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                      <a class="oaky-background rounded-3 text-decoration-underline nav-link brown-quote px-2 " href="/get-quote/">Get A Quote</a>
-                                                </li>
-                                          </ul>
-                                    </div>
-                              </div>
-                        </nav>
+                    </section>
 
-                        <!-- NAVBAR END -->
-                  </header>
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
+            </div>
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Door fitting and redecoration plus adhoc fixes that Dan advised needed
+                                doing</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-2" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “Dan is excellent. Obvs.Vast experience. He is training an apprentice to pass on his
+                                experience. Very straightforward chap. Regarding the minority of negative reviews here;
+                                Let he who is without sin cast the first stone (John 8:7) Terribly unfair to use social
+                                media to vent your frustrations. Tell your mates, tell Dan, praise in public, but don’t
+                                jeopardise a hard working fellow’s chances of earning and putting food on the table. If
+                                you’ve never had an off day at work, if you are perfect! Then carry on venting, but I
+                                think it says more about you than Dan? Dan saved our lives. Thanks Dan”
+                            </p>
+
+                            <label for="expand-2" class="expand-label"></label>
+                        </div>
+
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            LS8, November 2023
+                        </p>
+
+                    </section>
+
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
+            </div>
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Replace skirting</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-3" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “Thanks Dan. Would deffo use again.”
+                            </p>
+
+                            <label for="expand-3" class="expand-label"></label>
+                        </div>
+
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            LS14, December 2024
+                        </p>
+
+                    </section>
+
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
+            </div>
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Door fixing</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-4" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “He arrived on time and fixed the door. All went well.”
+                            </p>
+
+                            <label for="expand-4" class="expand-label"></label>
+                        </div>
+
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            LS17, January 2024
+                        </p>
+
+                    </section>
+
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
+            </div>
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Bespoke shelving unit and cupboards</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-5" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “I was recommended dan by a friend who said he&#x27;d done an excellent job on her house
+                                doing various bits. I asked him to make me a bespoke shelving unit of 3 shelves for my
+                                bathroom to fit a small space. He communicated very well and sent me lots of inspo pics
+                                to help me see what could be done. He arrived on time on the day he said he would and
+                                was a hard worker finishing the whole project in one day. I&#x27;m very pleased with my
+                                shelving unit and highly recommend him!”
+                            </p>
+
+                            <label for="expand-5" class="expand-label"></label>
+                        </div>
+
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            LS13, July 2024
+                        </p>
+
+                    </section>
+
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
+            </div>
+
+            <div class="col-12 mb-1 mt-2">
+                <article class="review-card p-4 border rounded-3">
+
+                    <header class="mb-3 text-start">
+                        <h4 class="mb-1">
+                            <strong>Radiator covers</strong>
+                        </h4>
+                    </header>
+
+                    <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
+
+                        <!-- Expandable review text -->
+                        <div class="expandable-text">
+                            <input type="checkbox" id="expand-6" class="expand-toggle">
+
+                            <p class="border rounded-2 p-2 mb-0 truncate-sm">
+                                “What a job from start to finish gave such advice delighted with service and job on time
+                                and clean service would definitely use him again and would recommend him for his work
+                                thank you dan !!”
+                            </p>
+
+                            <label for="expand-6" class="expand-label"></label>
+                        </div>
+
+                        <p class="text-muted mb-0 flex-shrink-0">
+                            LS15, October 2024
+                        </p>
+
+                    </section>
+
+                    <footer class="mt-3 text-start">
+                        <span class="oaky-background rounded-2 p-2 d-inline-block">
+                            <strong>10/10</strong>
+                        </span>
+                    </footer>
+
+                </article>
             </div>
 
 
 
-<main class="container-lg">
-  <div class="row">
-
-
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
-
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Doors fitted</strong>
-            </h4>
-          </header>
-
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
-
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-1"
-                class="expand-toggle"
-              >
-
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “Came on time did the job same day did a really good job and cleaned up after himself would definitely recommend him”
-              </p>
-
-              <label
-                for="expand-1"
-                class="expand-label"
-              ></label>
-            </div>
-
-            <p class="text-muted mb-0 flex-shrink-0">
-              WF10, November 2024
-            </p>
-
-          </section>
-
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
-
-        </article>
-      </div>
-
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
-
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Door fitting and redecoration plus adhoc fixes that Dan advised needed doing</strong>
-            </h4>
-          </header>
-
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
-
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-2"
-                class="expand-toggle"
-              >
-
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “Dan is excellent. Obvs.Vast experience. He is training an apprentice to pass on his experience. Very straightforward chap. Regarding the minority of negative reviews here; Let he who is without sin cast the first stone (John 8:7) Terribly unfair to use social media to vent your frustrations. Tell your mates, tell Dan, praise in public, but don’t jeopardise a hard working fellow’s chances of earning and putting food on the table. If you’ve never had an off day at work, if you are perfect! Then carry on venting, but I think it says more about you than Dan? Dan saved our lives. Thanks Dan”
-              </p>
-
-              <label
-                for="expand-2"
-                class="expand-label"
-              ></label>
-            </div>
-
-            <p class="text-muted mb-0 flex-shrink-0">
-              LS8, November 2023
-            </p>
-
-          </section>
-
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
-
-        </article>
-      </div>
-
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
-
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Replace skirting</strong>
-            </h4>
-          </header>
-
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
-
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-3"
-                class="expand-toggle"
-              >
-
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “Thanks Dan. Would deffo use again.”
-              </p>
-
-              <label
-                for="expand-3"
-                class="expand-label"
-              ></label>
-            </div>
-
-            <p class="text-muted mb-0 flex-shrink-0">
-              LS14, December 2024
-            </p>
-
-          </section>
-
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
-
-        </article>
-      </div>
-
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
-
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Door fixing</strong>
-            </h4>
-          </header>
-
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
-
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-4"
-                class="expand-toggle"
-              >
-
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “He arrived on time and fixed the door. All went well.”
-              </p>
-
-              <label
-                for="expand-4"
-                class="expand-label"
-              ></label>
-            </div>
-
-            <p class="text-muted mb-0 flex-shrink-0">
-              LS17, January 2024
-            </p>
-
-          </section>
-
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
+            <nav class="pagination mt-4 mb-2">
+                <ul class="pagination justify-content-center">
 
-        </article>
-      </div>
 
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
 
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Bespoke shelving unit and cupboards</strong>
-            </h4>
-          </header>
 
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
 
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-5"
-                class="expand-toggle"
-              >
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
 
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “I was recommended dan by a friend who said he&#x27;d done an excellent job on her house doing various bits. I asked him to make me a bespoke shelving unit of 3 shelves for my bathroom to fit a small space. He communicated very well and sent me lots of inspo pics to help me see what could be done. He arrived on time on the day he said he would and was a hard worker finishing the whole project in one day. I&#x27;m very pleased with my shelving unit and highly recommend him!”
-              </p>
 
-              <label
-                for="expand-5"
-                class="expand-label"
-              ></label>
-            </div>
 
-            <p class="text-muted mb-0 flex-shrink-0">
-              LS13, July 2024
-            </p>
+                    <li class="page-item">
+                        <a class="page-link" href="?page=2">2</a>
+                    </li>
 
-          </section>
 
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
 
-        </article>
-      </div>
+                    <li class="page-item">
+                        <a class="page-link" href="?page=3">3</a>
+                    </li>
 
-      <div class="col-12 mb-1 mt-2">
-        <article class="review-card p-4 border rounded-3">
 
-          <header class="mb-3 text-start">
-            <h4 class="mb-1">
-              <strong>Radiator covers</strong>
-            </h4>
-          </header>
 
-          <section class="d-flex flex-wrap justify-content-between align-items-start gap-2 text-start">
 
-            <!-- Expandable review text -->
-            <div class="expandable-text">
-              <input
-                type="checkbox"
-                id="expand-6"
-                class="expand-toggle"
-              >
+                    <li class="page-item">
+                        <a class="page-link" href="?page=2">
+                            Next
+                        </a>
+                    </li>
 
-              <p class="border rounded-2 p-2 mb-0 truncate-sm">
-                “What a job from start to finish gave such advice delighted with service and job on time and clean service would definitely use him again and would recommend him for his work thank you dan !!”
-              </p>
 
-              <label
-                for="expand-6"
-                class="expand-label"
-              ></label>
-            </div>
+                </ul>
+            </nav>
 
-            <p class="text-muted mb-0 flex-shrink-0">
-              LS15, October 2024
-            </p>
 
-          </section>
+        </div>
+    </main>
 
-          <footer class="mt-3 text-start">
-            <span class="oaky-background rounded-2 p-2 d-inline-block">
-              <strong>10/10</strong>
-            </span>
-          </footer>
 
-        </article>
-      </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-
-
-      <nav class="pagination mt-4 mb-2">
-        <ul class="pagination justify-content-center">
-
-
-
-
-
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-
-
-
-              <li class="page-item">
-                <a class="page-link" href="?page=2">2</a>
-              </li>
-
-
-
-              <li class="page-item">
-                <a class="page-link" href="?page=3">3</a>
-              </li>
-
-
-
-
-            <li class="page-item">
-              <a
-                class="page-link"
-                href="?page=2"
-              >
-                Next
-              </a>
-            </li>
-
-
-        </ul>
-      </nav>
-
-
-  </div>
-</main>
-
-
-            <!-- Bootstrap JS Bundle -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      </body>
 </html>
